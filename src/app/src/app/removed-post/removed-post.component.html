@@ -1,0 +1,8 @@
+<div class="post-list">
+    <h4>Removed post list </h4> 
+    <div class="posts">
+        <div *ngFor="let d of data" class="post">
+            <span>{{d.name}} on the {{d.dateTime | date:'long'}}</span>
+        </div>
+    </div> 
+</div>

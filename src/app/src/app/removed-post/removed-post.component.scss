@@ -1,0 +1,21 @@
+.post-list{
+    padding: 8px;
+    background-color: darkgray;
+    width: 200px;
+}
+
+.posts{
+    height: calc(100vh - 280px);
+    max-height: calc(100vh - 280px);
+    overflow: hidden;
+    overflow-y: scroll;
+    margin: 5px 0;
+}
+
+.post{
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid;
+    border-radius: 8px;
+    font-size: 12px;
+}

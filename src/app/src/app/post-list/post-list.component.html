@@ -1,0 +1,14 @@
+<div>
+    <h2> Post detail list </h2>
+    <div class="post-list">
+        <div *ngFor="let d of data" [ngClass]="{'selectedPost': d.selected}">
+            <div class="card" (click)="onSelect(d.id)">
+                <div class="card-header">
+                    <div class="card-name">{{d.name}}</div>
+                    <button (click)="onRemove(d.id)">X</button>
+                </div>
+                <div class="content">{{d.content}}</div>
+            </div>
+        </div>
+    </div>
+</div>

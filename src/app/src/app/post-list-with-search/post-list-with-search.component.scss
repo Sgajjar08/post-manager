@@ -1,0 +1,35 @@
+.post-list-with-search-wrapper{
+    padding: 8px;
+    background-color: darkgray;
+    width: 200px;
+
+    input{
+        margin: 0 0 10px 0;
+        width: calc(100% - 10px);
+    }
+}
+
+.post-list{
+    height: calc(100vh - 315px);
+    max-height: calc(100vh - 315px);
+    overflow: hidden;
+    overflow-y: scroll;
+    margin: 5px 0;
+    & > div:hover{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        .post{
+            background-color: black;
+            color: white;
+            border-color: white;
+        }
+     }
+}
+
+.post{
+    font-size: 12px;
+    border: 1px solid;
+    border-color: black;
+    border-radius: 8px;
+    padding: 0 12px;
+    margin: 0 0 6px;
+}

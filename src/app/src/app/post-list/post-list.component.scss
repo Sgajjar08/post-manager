@@ -1,0 +1,46 @@
+.post-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: calc(100vh - 490px);
+    overflow: hidden;
+    overflow-y: auto;
+    & > div{
+        max-width: 190px;
+    width: 190px;
+    max-height: 150px;
+    padding: 8px;
+    margin: 14px;
+    border: 1px solid;
+    border-radius: 8px;
+    } 
+    & > div:hover{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        background-color: black;
+        color: white;
+        border-color: white;
+    }
+}
+
+.card-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+h2{
+    text-align: center;
+}
+
+.card-name{
+    flex: 1;
+    font-size: 14px;
+}
+
+.content{
+    font-size: 12px;
+    height: 40px;
+    overflow: hidden;
+    overflow-y: auto;
+}
