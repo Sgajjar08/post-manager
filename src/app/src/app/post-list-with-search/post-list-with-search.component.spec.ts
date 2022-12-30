@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { PostListWithSearchComponent } from './post-list-with-search.component';
+import {NO_ERRORS_SCHEMA} from "@angular/core";
 
 describe('PostListWithSearchComponent', () => {
   let component: PostListWithSearchComponent;
@@ -8,7 +9,10 @@ describe('PostListWithSearchComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PostListWithSearchComponent ]
+      declarations: [ PostListWithSearchComponent ],
+      schemas: [
+        NO_ERRORS_SCHEMA
+      ],
     })
     .compileComponents();
 
